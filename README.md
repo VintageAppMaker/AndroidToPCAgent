@@ -201,7 +201,10 @@ arm-none-linux-gnueabi-gcc -o cmd_apk -static cmd_apk.c
 adb push cmd_apk /data/local/tmp
 adb shell chmod 755 /data/local/tmp/cmd_apk
 ~~~ 
- 
+
+
+cmd_apk.c
+
 ~~~c
 /*
     제목: sendtoapk
@@ -381,3 +384,15 @@ int main( int argc, char **argv )
     CommandProgress(argv[1], argv[2]);
 }
 ~~~
+
+### 실행하기
+- 단말기를 USB 케이블과 연결한다(ADB와 USB 드라이버는 이미 설치되어 있어야 한다).
+- run.bat을 실행한다.
+![image](http://postfiles1.naver.net/20120215_128/adsloader_1329315188800Fj1cc_PNG/4.PNG?type=w2) 
+- 0을 눌러 APK를 설치한다.
+- 5를 눌러 APK List를 본다.
+![image](http://postfiles16.naver.net/20120215_223/adsloader_1329315240897mOqsf_PNG/5.PNG?type=w2) 
+- 9를 눌러 동영상 정보를 본다.
+![image](http://postfiles7.naver.net/20120215_278/adsloader_1329315487503vyE5V_PNG/6.PNG?type=w2) 
+
+
