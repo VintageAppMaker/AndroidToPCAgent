@@ -41,7 +41,7 @@ ADB shell에서 linux application을 실행할 수 있는 경로는 다음과 �
 이곳에 프로그램을 복사한 후, 퍼미션을 지정한 후에 실행하면 된다.
 아래는 DOS 커맨드 상에서 명령어를 편하게 사용할 수 있도록 만든 배치파일이다. 
 
-~~~
+~~~bat
 @echo off
  
 title APK Analyzer(Device, PC)
@@ -197,7 +197,7 @@ Linux App을 만들기 위해서는 NDK를 받아서 Execute-able 바이너리�
 
 설치 후, 컴파일 및 퍼미션을 수행하는 방법은 다음과 같다.
 
-~~~
+~~~bat
 arm-none-linux-gnueabi-gcc -o cmd_apk -static cmd_apk.c
 adb push cmd_apk /data/local/tmp
 adb shell chmod 755 /data/local/tmp/cmd_apk
