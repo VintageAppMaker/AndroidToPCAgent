@@ -1,4 +1,5 @@
 # AndroidToPCAgent
+[원본블로그](http://blog.naver.com/adsloader/50134141484)
 
 ### PC와 Android Device 연동 구상 
  
